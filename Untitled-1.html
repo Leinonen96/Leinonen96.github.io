@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taasu Taverna</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0eae0;
+  }
+  .header {
+    background-color: #e4d5c3;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header img {
+    width: 50px;
+    height: auto;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .main-content {
+    padding: 20px;
+    text-align: center;
+  }
+  .title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .book-now-btn {
+    background-color: #4caf50;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .footer {
+    background-color: #e4d5c3;
+    padding: 10px 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png" alt="Taasu Taverna Logo">
+  <ul class="nav-links">
+    <li><a href="#introduction">Esittely</a></li>
+    <li><a href="#bookings">Varaukset</a></li>
+    <li><a href="#contact">Yhteystiedot</a></li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <div class="title">KUVIA ELÄIMISTÄ</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <button class="book-now-btn" onclick="bookNow()">Varaa Nyt!</button>
+</div>
+
+<div class="footer">
+  © Taasu Taverna
+</div>
+
+<script>
+  function bookNow() {
+    // hakee varaus sivun
+    alert('menee varaus sivulle');
+  }
+</script>
+
+</body>
+</html>
