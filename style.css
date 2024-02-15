@@ -1,0 +1,49 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0eae0;
+  }
+  .header {
+    background-color: #e4d5c3;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header img {
+    width: 50px;
+    height: auto;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .main-content {
+    padding: 20px;
+    text-align: center;
+  }
+  .title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .book-now-btn {
+    background-color: #4caf50;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .footer {
+    background-color: #e4d5c3;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
