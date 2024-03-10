@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteystiedot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header class="header">
+            <a href="index.html">
+                <img src="kuvat/tassutavernaLogo.png">
+            </a>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </header>
+
+        <div class="nav-window">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="esittely.html">Esittely</a></li>
+                    <li><a href="varaukset.html">Varaukset</a></li>
+                    <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-container">
+            <div class="animal-images-wrapper">
+                <div class="animal-images">
+                    <img src="kuvat/bannerImages/dog1.jpg">
+                    <img src="kuvat/bannerImages/undulaatit.jpg">
+                    <img src="kuvat/bannerImages/cat1.jpg">
+                    <img src="kuvat/bannerImages/lizard.jpg">
+                    <img src="kuvat/bannerImages/dog2.jpg">
+                    <img src="kuvat/bannerImages/cat2.jpg">
+                </div>
+            </div>
+
+            <div class="main-container">
+                <!-- ... -->
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="flex: 1; margin-right: 20px;">
+                        <h1 class="title">Varaa paikka TassuTavernaan!</h1>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit.
+
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit. 
+
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit.
+
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit.
+
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+
+                    </div>
+                    <div style="display: flex; flex-direction: column; background-color: #d1e6e4; padding: 20px;">
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="etunimi" style="margin-bottom: 10px; text-align: left;">Etunimi:</label>
+                            <input type="text" id="etunimi" name="etunimi"
+                                style="margin-bottom: 0px; width: 200px; align-self: flex-start;"><br>
+
+                            <label for="sukunimi" style="margin-bottom: 10px; text-align: left;">Sukunimi:</label>
+                            <input type="text" id="sukunimi" name="sukunimi"
+                                style="margin-bottom: 10px; width: 200px; align-self: flex-start;"><br>
+
+                            <label for="sähköposti" style="margin-bottom: 10px; text-align: left;">Sähköposti:</label>
+                            <input type="email" id="sähköposti" name="sähköposti"
+                                style="margin-bottom: 10px; align-self: width: 200px; flex-start;"><br>
+
+                            <label for="puhelinnumero"
+                                style="margin-bottom: 10px; text-align: left;">Puhelinnumero:</label>
+                            <input type="tel" id="puhelinnumero" name="puhelinnumero"
+                                style="margin-bottom: 10px; align-self: width: 200px; flex-start;"><br>
+
+                            <label for="species" style="margin-bottom: 10px; text-align: left;">Eläinlaji:</label>
+                            <select id="species" name="species" style="margin-bottom: 10px; align-self: flex-start;">
+                                <option value="dog">Koira</option>
+                                <option value="cat">kissa</option>
+                                <option value="bird">Lintu</option>
+                                <option value="lizard">Lisko</option>
+                                <option value="lizard">jokin muu</option>
+                            </select><br>
+
+                            <label for="tulopäivä" style="margin-bottom: 10px; text-align: left;">Tulopäivä:</label>
+                            <input type="datetime-local" id="tulopäivä" name="tulopäivä"
+                                style="width: 200px; margin-bottom: 10px; align-self: flex-start;"><br>
+
+                            <label for="lähtöpäivä" style="margin-bottom: 10px; text-align: left;">Lähtöpäivä:</label>
+                            <input type="datetime-local" id="lähtöpäivä" name="lähtöpäivä"
+                                style="width: 200px; margin-bottom: 10px; align-self: flex-start;"><br>
+
+                            <label for="ruokavalio" style="margin-bottom: 10px; text-align: left;">Ruokavalio
+                                informaatio:</label>
+                            <textarea id="ruokavalio" name="ruokavalio"
+                                style="width: 200px; margin-bottom: 10px; align-self: flex-start;"></textarea><br>
+
+                            <label for="additional-info"
+                                style="margin-bottom: 10px; text-align: left;">Lisätiedot:</label>
+                            <textarea id="additional-info" name="additional-info"
+                                style="width: 200px; margin-bottom: 10px; align-self: flex-start;"></textarea><br>
+
+                            <input type="submit" value="Submit" style="margin-bottom: 20px;"">
+                    </div>
+                </div>
+                </div>
+                <!-- ... -->
+            </div>
+
+        </div>
+        </main>
+
+        <footer class=" footer">
+                            © TassuTaverna
+                            </footer>
+
+                            <script>
+
+                                function toggleMenu() {
+                                    var navLinks = document.querySelector('.nav-links');
+                                    navLinks.classList.toggle('open'); /* Toggle the open class */
+                                }
+
+                                function autoExpand(field) {
+                                    // Reset field height
+                                    field.style.height = 'inherit';
+
+                                    // Get the computed styles for the element
+                                    var computed = window.getComputedStyle(field);
+
+                                    // Calculate the height
+                                    var height = parseInt(computed.getPropertyValue('border-top-width'), 10)
+                                        + parseInt(computed.getPropertyValue('padding-top'), 10)
+                                        + field.scrollHeight
+                                        + parseInt(computed.getPropertyValue('padding-bottom'), 10)
+                                        + parseInt(computed.getPropertyValue('border-bottom-width'), 10);
+
+                                    field.style.height = height + 'px';
+                                };
+
+                                document.addEventListener('input', function (event) {
+                                    if (event.target.tagName.toLowerCase() !== 'textarea') return;
+                                    autoExpand(event.target);
+                                }, false);
+                            </script>
+                        </div>
+</body>
+
+</html>

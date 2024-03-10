@@ -1,39 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TassuTaverna</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TassuTaverna</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="content-wrapper">
+    <header class="header">
+      <img src="kuvat/tassutavernaLogo.png">
+      <button class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
 
-<div class="header">
-  <img src="logo.png" alt="Taasu Taverna Logo">
-  <ul class="nav-links">
-    <li><a href="#introduction">Esittely</a></li>
-    <li><a href="#bookings">Varaukset</a></li>
-    <li><a href="#contact">Yhteystiedot</a></li>
-  </ul>
-</div>
+    <div class="nav-window">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="esittely.html">Esittely</a></li>
+          <li><a href="varaukset.html">Varaukset</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+    </div>
 
-<div class="main-content">
-  <div class="title">KUVIA ELÄIMISTÄ</div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <button class="book-now-btn" onclick="bookNow()">Varaa Nyt!</button>
-</div>
+    <div class="main-container">
+      <div class="animal-images-wrapper">
+        <div class="animal-images">
+          <img src="kuvat/bannerImages/dog1.jpg">
+          <img src="kuvat/bannerImages/undulaatit.jpg">
+          <img src="kuvat/bannerImages/cat1.jpg">
+          <img src="kuvat/bannerImages/lizard.jpg">
+          <img src="kuvat/bannerImages/dog2.jpg">
+          <img src="kuvat/bannerImages/cat2.jpg">
+        </div>
+      </div>
 
-<div class="footer">
-  © TassuTaverna
-</div>
+      <h1 class="title">Terve tuloa TassuTavernaan!</h1>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit.
+  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit.
+  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+  
+        <button class="book-now-btn" onclick="bookNow()">Varaa Nyt!</button><br>
+    </div>
+    </main>
 
-<script>
-  function bookNow() {
-    // hakee varaus sivun!
-    alert('menee varaus sivulle');
-  }
-</script>
+    <footer class="footer">
+      © TassuTaverna
+    </footer>
 
+    <script>
+      function bookNow() {
+        var bookingPageUrl = "varaukset.html";
+        window.location.href = bookingPageUrl;
+      }
+
+      function toggleMenu() {
+        var navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('open'); /* Toggle the open class */
+}
+    </script>
+  </div>
 </body>
+
 </html>
