@@ -54,7 +54,7 @@
 
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
                                 ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
-                                dolor sit amet, consectetur adipiscing elit. 
+                                dolor sit amet, consectetur adipiscing elit.
 
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant.
                             </p>
@@ -85,12 +85,12 @@
 
                             <label for="sähköposti" style="margin-bottom: 10px; text-align: left;">Sähköposti:</label>
                             <input type="email" id="sähköposti" name="sähköposti"
-                                style="margin-bottom: 10px; align-self: width: 200px; flex-start;"><br>
+                                style="margin-bottom: 10px; width: 200px; align-self: flex-start;"><br>
 
                             <label for="puhelinnumero"
                                 style="margin-bottom: 10px; text-align: left;">Puhelinnumero:</label>
                             <input type="tel" id="puhelinnumero" name="puhelinnumero"
-                                style="margin-bottom: 10px; align-self: width: 200px; flex-start;"><br>
+                                style="margin-bottom: 10px; align-self: flex-start; width: 200px;"><br>
 
                             <label for="species" style="margin-bottom: 10px; text-align: left;">Eläinlaji:</label>
                             <select id="species" name="species" style="margin-bottom: 10px; align-self: flex-start;">
@@ -119,7 +119,7 @@
                             <textarea id="additional-info" name="additional-info"
                                 style="width: 200px; margin-bottom: 10px; align-self: flex-start;"></textarea><br>
 
-                            <input type="submit" value="Submit" style="margin-bottom: 20px;"">
+                            <input type="submit" value="Submit" style="margin-bottom: 20px;">
                     </div>
                 </div>
                 </div>
@@ -129,39 +129,38 @@
         </div>
         </main>
 
-        <footer class=" footer">
-                            © TassuTaverna
-                            </footer>
+        <footer class="footer">
+            © TassuTaverna
+        </footer>
 
-                            <script>
+        <script>
+            function toggleMenu() {
+                var navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('open'); /* Toggle the open class */
+            }
 
-                                function toggleMenu() {
-                                    var navLinks = document.querySelector('.nav-links');
-                                    navLinks.classList.toggle('open'); /* Toggle the open class */
-                                }
+            function autoExpand(field) {
+                // Reset field height
+                field.style.height = 'inherit';
 
-                                function autoExpand(field) {
-                                    // Reset field height
-                                    field.style.height = 'inherit';
+                // Get the computed styles for the element
+                var computed = window.getComputedStyle(field);
 
-                                    // Get the computed styles for the element
-                                    var computed = window.getComputedStyle(field);
+                // Calculate the height
+                var height = parseInt(computed.getPropertyValue('border-top-width'), 10) +
+                    parseInt(computed.getPropertyValue('padding-top'), 10) +
+                    field.scrollHeight +
+                    parseInt(computed.getPropertyValue('padding-bottom'), 10) +
+                    parseInt(computed.getPropertyValue('border-bottom-width'), 10);
 
-                                    // Calculate the height
-                                    var height = parseInt(computed.getPropertyValue('border-top-width'), 10)
-                                        + parseInt(computed.getPropertyValue('padding-top'), 10)
-                                        + field.scrollHeight
-                                        + parseInt(computed.getPropertyValue('padding-bottom'), 10)
-                                        + parseInt(computed.getPropertyValue('border-bottom-width'), 10);
+                field.style.height = height + 'px';
+            };
 
-                                    field.style.height = height + 'px';
-                                };
-
-                                document.addEventListener('input', function (event) {
-                                    if (event.target.tagName.toLowerCase() !== 'textarea') return;
-                                    autoExpand(event.target);
-                                }, false);
-                            </script>
+            document.addEventListener('input', function (event) {
+                if (event.target.tagName.toLowerCase() !== 'textarea') return;
+                autoExpand(event.target);
+            }, false);
+        </script>
                         </div>
 </body>
 
