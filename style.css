@@ -224,14 +224,14 @@ form {
 
 .text-container {
   max-width: 800px;
-  margin: 0 auto; /* Center the text container */
+  margin: 0 auto;
   text-align: left;
   padding: 50px;
 }
 
 .text-container2 {
   max-width: 800px;
-  margin: 0 auto; /* Center the text container */
+  margin: 0 auto;
   text-align: left;
   padding: 50px;
   margin-bottom: 500px;
@@ -251,8 +251,8 @@ form {
 }
 
 .Yhteystiedot img {
-  width: 50px; /* Adjust this value as needed */
-  height: 50px; /* Adjust this value as needed */
+  width: 50px;
+  height: 50px;
   margin: 5px;
 }
 
@@ -263,9 +263,9 @@ form {
 }
 
 .image-grid img {
-  width: 400px; /* Adjust this value as needed */
-  height: auto; /* Adjust this value as needed */
-  object-fit: cover; /* This will ensure the images maintain their aspect ratio */
+  width: 400px; 
+  height: auto;
+  object-fit: cover;
 }
 
 
@@ -283,13 +283,13 @@ form {
 }
 
 .varaukset {
-  border-radius: 10px; /* Adjust this value as needed */
+  border-radius: 10px;
 }
 
 .book-now-btn {
-  background-color: #4CAF50; /* Green background */
-  border: none; /* Remove border */
-  color: white; /* White text */
+  background-color: #6ec7c7;
+  border: none;
+  color: white;
   padding: 15px 32px; /* Padding */
   text-align: center; /* Center text */
   text-decoration: none; /* Remove underline */
