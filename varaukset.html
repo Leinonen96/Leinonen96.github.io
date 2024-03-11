@@ -67,7 +67,8 @@
 
                     </div>
 
-                    <div style="display: flex; border-radius: 10px; flex-direction: column; background-color: #d1e6e4; padding: 20px;">
+                    <div
+                        style="display: flex; border-radius: 10px; flex-direction: column; background-color: #d1e6e4; padding: 20px;">
                         <form>
                             <div style="display: flex; flex-direction: column;">
                                 <label for="etunimi" style="margin-bottom: 10px; text-align: left;">Etunimi:</label>
@@ -78,7 +79,8 @@
                                 <input type="text" id="sukunimi" name="sukunimi"
                                     style="margin-bottom: 10px; width: 200px; align-self: flex-start;"><br>
 
-                                <label for="sähköposti" style="margin-bottom: 10px; text-align: left;">Sähköposti:</label>
+                                <label for="sähköposti"
+                                    style="margin-bottom: 10px; text-align: left;">Sähköposti:</label>
                                 <input type="email" id="sähköposti" name="sähköposti"
                                     style="margin-bottom: 10px; width: 200px; align-self: flex-start;"><br>
 
@@ -88,7 +90,8 @@
                                     style="margin-bottom: 10px; align-self: flex-start; width: 200px;"><br>
 
                                 <label for="species" style="margin-bottom: 10px; text-align: left;">Eläinlaji:</label>
-                                <select id="species" name="species" style="margin-bottom: 10px; align-self: flex-start;">
+                                <select id="species" name="species"
+                                    style="margin-bottom: 10px; align-self: flex-start;">
                                     <option value="dog">Koira</option>
                                     <option value="cat">kissa</option>
                                     <option value="bird">Lintu</option>
@@ -100,7 +103,8 @@
                                 <input type="datetime-local" id="tulopäivä" name="tulopäivä"
                                     style="width: 200px; margin-bottom: 10px; align-self: flex-start;"><br>
 
-                                <label for="lähtöpäivä" style="margin-bottom: 10px; text-align: left;">Lähtöpäivä:</label>
+                                <label for="lähtöpäivä"
+                                    style="margin-bottom: 10px; text-align: left;">Lähtöpäivä:</label>
                                 <input type="datetime-local" id="lähtöpäivä" name="lähtöpäivä"
                                     style="width: 200px; margin-bottom: 10px; align-self: flex-start;"><br>
 
@@ -128,19 +132,16 @@
         </footer>
 
         <script>
+            /* Navigation bar toggle */
             function toggleMenu() {
                 var navLinks = document.querySelector('.nav-links');
-                navLinks.classList.toggle('open'); /* Toggle the open class */
+                navLinks.classList.toggle('open');
             }
 
+            /* fuction makes sure the free text form fields expand according to the input*/
             function autoExpand(field) {
-                // Reset field height
                 field.style.height = 'inherit';
-
-                // Get the computed styles for the element
                 var computed = window.getComputedStyle(field);
-
-                // Calculate the height
                 var height = parseInt(computed.getPropertyValue('border-top-width'), 10) +
                     parseInt(computed.getPropertyValue('padding-top'), 10) +
                     field.scrollHeight +
@@ -155,7 +156,7 @@
                 autoExpand(event.target);
             }, false);
         </script>
-                        </div>
+    </div>
 </body>
 
 </html>
