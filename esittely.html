@@ -1,71 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yhteystiedot</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="content-wrapper">
-      <header class="header">
-        <img src="kuvat/tassutavernaLogo.png">
-        <button class="hamburger" onclick="toggleMenu()">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-      </header>
-  
-      <div class="nav-window">
-        <nav>
-          <ul class="nav-links">
-            <li><a href="esittely.html">Esittely</a></li>
-            <li><a href="varaukset.html">Varaukset</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-          </ul>
-        </nav>
-      </div>
-  
-      <div class="main-container">
-        <div class="animal-images-wrapper">
-          <div class="animal-images">
-            <img src="kuvat/bannerImages/dog1.jpg">
-            <img src="kuvat/bannerImages/undulaatit.jpg">
-            <img src="kuvat/bannerImages/cat1.jpg">
-            <img src="kuvat/bannerImages/lizard.jpg">
-            <img src="kuvat/bannerImages/dog2.jpg">
-            <img src="kuvat/bannerImages/cat2.jpg">
-          </div>
-        </div>
-  
-        <h1 class="title">Terve tuloa TassuTavernaan</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit.
 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button class="book-now-btn" onclick="bookNow()">Varaa Nyt!</button><br>
-      </div>
-      </main>
-  
-      <footer class="footer">
-        © TassuTaverna
-      </footer>
-  
-      <script>
-        function bookNow() {
-          var bookingPageUrl = "https://www.example.com/booking";
-          window.location.href = bookingPageUrl;
-        }
-  
-        function toggleMenu() {
-          var navLinks = document.querySelector('.nav-links');
-          navLinks.classList.toggle('open'); /* Toggle the open class */
-  }
-      </script>
+<body>
+  <div class="content-wrapper">
+    <header class="header">
+      <a href="index.html">
+        <img src="kuvat/tassutavernaLogo.png">
+      </a>
+      <button class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <div class="nav-window">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="esittely.html">Esittely</a></li>
+          <li><a href="varaukset.html">Varaukset</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+      </nav>
     </div>
-  </body>
+
+    <div class="main-container">
+      <div class="animal-images-wrapper">
+        <div class="animal-images">
+          <img src="kuvat/bannerImages/dog1.jpg">
+          <img src="kuvat/bannerImages/undulaatit.jpg">
+          <img src="kuvat/bannerImages/cat1.jpg">
+          <img src="kuvat/bannerImages/lizard.jpg">
+          <img src="kuvat/bannerImages/dog2.jpg">
+          <img src="kuvat/bannerImages/cat2.jpg">
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="text-container">
+          <h1 class="title">Meidän tarina</h1>
+          <p class="left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque habitant. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Pellentesque habitant. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="image-grid">
+          <img src="kuvat/esittelyKuvat/kuva1.jpg">
+          <img src="kuvat/esittelyKuvat/kuva2.jpg">
+          <img src="kuvat/esittelyKuvat/kuva3.jpg">
+          <img src="kuvat/esittelyKuvat/kuva4.jpg">
+          <img src="kuvat/esittelyKuvat/kuva5.jpg">
+          <img src="kuvat/esittelyKuvat/kuva6.jpg">
+          <img src="kuvat/esittelyKuvat/kuva7.jpg">
+          <img src="kuvat/esittelyKuvat/kuva8.jpg">
+        </div>
+      </div>
+
+      <button class="book-now-btn" onclick="bookNow()">Varaa Nyt!</button><br>
+    </div>
+
+
+    <footer class="footer">
+      © TassuTaverna
+    </footer>
+
+    <script>
+      function bookNow() {
+        var bookingPageUrl = "https://www.example.com/booking";
+        window.location.href = bookingPageUrl;
+      }
+
+      function toggleMenu() {
+        var navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('open'); /* Toggle the open class */
+      }
+    </script>
+  </div>
+</body>
+
 </html>

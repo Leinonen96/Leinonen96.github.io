@@ -211,6 +211,23 @@ form {
   flex-shrink: 1;
 }
 
+.content-image-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the text container */
+  text-align: left;
+}
+
+.image-grid img {
+  width: 400px; /* Adjust this value as needed */
+  height: auto; /* Adjust this value as needed */
+  object-fit: cover; /* This will ensure the images maintain their aspect ratio */
+}
+
 .title {
   font-size: 2em;
   margin-bottom: 20px;
@@ -225,6 +242,25 @@ form {
   cursor: pointer;
 }
 
+.book-now-btn {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 16px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition */
+  border-radius: 12px;
+}
+
+.book-now-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
 .input-group {
   display: flex;
   justify-content: space-between;
