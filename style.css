@@ -27,8 +27,9 @@ body {
   height: auto;
   background-color: #6ec7c7;
   height: 58px;
-  max-width: 1000px;
+  max-width: 100%;
   flex-wrap: wrap;
+  
 }
 
 .header img {
@@ -43,6 +44,7 @@ body {
 nav ul {
   padding: 0;
 }
+
 
 .nav-links {
   list-style: none;
@@ -145,6 +147,7 @@ nav ul,
     align-items: flex-end;
     max-height: 0;
   }
+
 }
 
 .nav-links.open {
@@ -183,11 +186,8 @@ nav ul,
 form {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
   align-items: center;
   justify-content: center;
-  margin: 20px;
-  padding: 20px;
   border-radius: 10px;
   max-width: 1000px;
 }
@@ -238,7 +238,7 @@ form {
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
-  padding: 50px;
+  padding: 20px;
   margin-bottom: 500px;
 }
 
